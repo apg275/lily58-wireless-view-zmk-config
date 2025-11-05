@@ -75,25 +75,24 @@
 //                                 ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯
             >;
         };
-
         adj_layer {
             label = "Adjust";
             bindings = <
 //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮                         ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
 //│          │          │          │          │          │          │                         │          │          │          │          │          │          │
-     &none      &none      &none      &none      &none      &none                                &none      &none      &none      &none      &none      &none 
+    &trans     &trans     &trans     &trans     &trans     &trans                               &trans     &trans     &trans     &trans     &trans     &trans
 //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤                         ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
-//│ BT CLEAR │          │          │          │          │          │                         │  NUM *   │  NUM 7   │  NUM 8   │  NUM 9   │  NUM -   │          │
-    &bt BT_CLR  &none      &none      &none      &none      &none                             &kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &none
+//│ ` ~      │  1 !     │  2 @     │  3 #     │  4 $     │  5 %     │                         │  6 ^     │  7 &     │  8 *     │  9 (     │  0 )     │          │
+    &kp GRAVE  &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                               &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &trans
 //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤                         ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
-//│          │ BLE 1    │ BLE 2    │ BLE 3    │ BLE 4    │ BLE 5    │                         │ NUM /    │  NUM 4   │  NUM 5   │  NUM 6   │  NUM +   │          │
-    &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                   &kp KP_DIVIDE &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS &none
+//│ CAPS     │ - _      │  = +     │  \ |     │          │ NUM LOCK │                         │ NUM *    │  4 $     │ 5 %      │  6 ^     │  NUM -   │          │
+    &kp CAPS   &kp MINUS  &kp EQUAL  &kp BSLH   &trans    &kp KP_NUM                        &kp KP_MULTIPLY &kp N4    &kp N5     &kp N6     &kp KP_MINUS &trans
 //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────╮   ╭──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
-//│ BOOT LOAD│ RESET    │          │ USB OUT  │ BLE OUT  │USB BLE TG│          │   │ NUM LOCK │ NUM .    │  NUM 1   │  NUM 2   │  NUM 3   │  NUM .   │          │           
-  &bootloader  &sys_reset   &none   &out OUT_USB &out OUT_BLE &out OUT_TOG &none      &kp KP_NUM &kp KP_DOT &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT  &none
+//│          │ [ {      │  ] }     │  ; :     │          │          │ CAPS     │   │ NUM LOCK │ NUM .    │ 1 !      │ 2 @      │ 3 #      │  NUM +   │          │           
+    &trans     &kp LBKT   &kp RBKT   &kp SEMI   &trans     &trans     &kp CAPS      &kp KP_NUM &kp KP_DOT  &kp N1     &kp N2     &kp N3     &kp KP_PLUS  &trans
 //╰──────────┴──────────┴──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────├──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-//                                 │          │          │ ADJUST TG│          │   │ NUM ENTER│ ADJUST TG│ NUM 0    │          │          
-                                     &trans     &trans     &tog 3     &trans         &kp KP_ENTER &tog 3    &kp KP_N0   &trans
+//                                 │          │          │          │ L ALT    │   │ ADJUST TG│          │          │          │          
+                                     &trans     &trans     &trans     &kp LALT        &tog 3    &trans     &trans     &trans
 //                                 ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯
             >;
         };
