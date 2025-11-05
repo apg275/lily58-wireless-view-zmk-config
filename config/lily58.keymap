@@ -83,7 +83,7 @@
     &none      &none      &none      &none      &none      &none                                &none      &none      &none      &none      &none      &none 
 //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤                         ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
 //│ BT CLEAR │          │          │          │          │          │                         │  NUM *   │  NUM 7   │  NUM 8   │  NUM 9   │  NUM -   │          │
-    &kp GRAVE  &none      &none      &none      &none      &none                             &kp MULTIPLY  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &none
+    &bt BT_CLR  &none      &none      &none      &none      &none                             &kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &none
 //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤                         ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
 //│          │ BLE 1    │ BLE 2    │ BLE 3    │ BLE 4    │ BLE 5    │                         │ NUM /    │  NUM 4   │  NUM 5   │  NUM 6   │  NUM +   │          │
     &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                   &kp KP_DIVIDE &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS &none
