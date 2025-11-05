@@ -89,7 +89,7 @@
     &kp CAPS   &kp MINUS  &kp EQUAL  &kp BSLH   &trans    &kp KP_NUM                        &kp KP_MULTIPLY &kp N4    &kp N5     &kp N6     &kp KP_MINUS &trans
 //├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────╮   ╭──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
 //│          │ [ {      │  ] }     │  ; :     │          │          │ CAPS     │   │ NUM LOCK │ NUM .    │ 1 !      │ 2 @      │ 3 #      │  NUM +   │          │           
-    &trans     &kp LBKT   &kp RBKT   &kp SEMI   &trans     &trans     &kp CAPS      &kp KP_NUM &kp KP_DOT  &kp N1     &kp N2     &kp N3     &kp KP_PLUS  &trans
+    &trans     &kp LBKT   &kp RBKT &out OUT_USB &out OUT_BLE &out OUT_TOG     &kp CAPS      &kp KP_NUM &kp KP_DOT  &kp N1     &kp N2     &kp N3     &kp KP_PLUS  &trans
 //╰──────────┴──────────┴──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────├──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
 //                                 │          │          │          │ L ALT    │   │ ADJUST TG│          │          │          │          
                                      &trans     &trans     &trans     &kp LALT        &tog 3    &trans     &trans     &trans
