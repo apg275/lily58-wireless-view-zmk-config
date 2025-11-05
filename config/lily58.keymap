@@ -17,11 +17,11 @@
             label = "Base";
             bindings = <
 //╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮                         ╭──────────┬──────────┬──────────┬──────────┬──────────┬──────────╮
-//│ ESC      │  1       │  2       │  3       │  4       │  5       │                         │  6       │  7       │  8       │  9       │  0       │  "|"     │
-    &kp ESC    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                               &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp PIPE
+//│ ESC      │  1       │  2       │  3       │  4       │  5       │                         │  6       │  7       │  8       │  9       │  0       │BACKSPACE │
+    &kp ESC    &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                               &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp BSPC
 //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤                         ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
-//│ TAB      │  Q       │  W       │  E       │  R       │  T       │                         │  Y       │  U       │  I       │  O       │  P       │BACKSPACE │
-    &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T                                &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSPC
+//│ TAB      │  Q       │  W       │  E       │  R       │  T       │                         │  Y       │  U       │  I       │  O       │  P       │  "|"     │
+    &kp TAB    &kp Q      &kp W      &kp E      &kp R      &kp T                                &kp Y      &kp U      &kp I      &kp O      &kp P      &kp PIPE 
 //├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤                         ├──────────┼──────────┼──────────┼──────────┼──────────┤──────────┤
 //│ LOWER    │  A       │  S       │  D       │  F       │  G       │                         │  H       │  J       │  K       │  L       │  : ;     │ LOWER    │
     &mo 1      &kp A      &kp S      &kp D      &kp F      &kp G                                &kp H      &kp J      &kp K      &kp L      &kp SEMI   &mo 1
@@ -71,8 +71,8 @@
 //│          │ [ {      │  ] }     │  ; :     │          │          │ CAPS     │   │ NUM LOCK │ NUM .    │ 1 !      │ 2 @      │ 3 #      │  NUM +   │          │           
     &trans     &kp LBKT   &kp RBKT   &kp SEMI   &trans     &trans     &kp CAPS      &kp KP_NUM &kp KP_DOT  &kp N1     &kp N2     &kp N3     &kp KP_PLUS  &trans
 //╰──────────┴──────────┴──────────┼──────────┼──────────┼──────────┤──────────┤   ├──────────├──────────┼──────────┼──────────┼──────────┴──────────┴──────────╯
-//                                 │          │          │          │ L ALT    │   │ ADJUST TG│          │          │          │          
-                                     &trans     &trans     &trans     &kp LALT        &tog 3    &trans     &trans     &trans
+//                                 │          │          │          │ ADJUST TG│   │ ADJUST TG│          │          │          │          
+                                     &trans     &trans     &trans     &tog 3         &tog 3    &trans     &trans     &trans
 //                                 ╰──────────┴──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────┴──────────╯
             >;
         };
